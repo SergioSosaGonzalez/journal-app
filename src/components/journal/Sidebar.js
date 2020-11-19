@@ -13,6 +13,7 @@ const Sidebar = () => {
   const handleAddNew = () => {
     dispatch(startNewNote());
   };
+
   return (
     <aside className="journal__sidebar">
       <div className="journal__sidebar-navbar">

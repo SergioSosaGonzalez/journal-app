@@ -6,7 +6,7 @@ import { notesLogout } from './notes';
 export const startLoginWithEmailPassword = (email, password) => {
   return (dispatch) => {
     dispatch({ type: types.uiStartLoading, payload: {} });
-    firebase
+    return firebase
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then(({ user }) => {
